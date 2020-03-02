@@ -13,12 +13,6 @@
     "types",
     "utils"
   ],
-  "scripts": {
-    "build": "tsc --emitDeclarationOnly && babel src --out-dir ./ --extensions '.ts,.tsx'",
-    "clean": "rimraf {interfaces,types,components,utils,*.js}",
-    "prepare": "yarn clean && cross-env NODE_ENV=production yarn build",
-    "start": "babel src --out-dir ./ --extensions '.ts,.tsx' --watch"
-  },
   "dependencies": {
     "apollo-boost": "^0.3.1",
     "apollo-link-context": "^1.0.17",
